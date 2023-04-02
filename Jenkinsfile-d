@@ -28,16 +28,17 @@ pipeline {
         }
       }
 
-      stage('two') {
-            input {
-              message "Should we continue?"
-              ok "Yes, we should."
-            }
-        steps {
-          echo "two"
-        }
+    stage('two') {
+      input {
+        message "Should we continue?"
+        ok "Yes, we should."
+      }
+      steps {
+        echo "two"
       }
     }
+    }
+
     post {
         failure {
             echo 'I will always say Hello again!'
