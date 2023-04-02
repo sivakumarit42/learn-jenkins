@@ -3,12 +3,13 @@ node ("workstation") {
     try {
     stage("one") {
         echo "one"
-        sh 'exit 1'
+        //sh 'exit 1'
 
     }
 
     stage('two') {
         echo "two"
+        sh 'exit 1'
       }
  } catch (e) {
     stage('Declarative: Post Actions') {
