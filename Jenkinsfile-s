@@ -1,5 +1,5 @@
 //node {
-node ("workstation") {"
+node ("workstation") {
 
     stage("one") {
         echo "one"
