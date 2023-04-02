@@ -17,11 +17,12 @@ node ("workstation") {
             }
         }
 
-
+if ( PERSON == "RAGHU" ) {
     stage('two') {
         input(id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
         echo "two"
         //sh 'exit 1'
+      }
       }
  } catch (e) {
     stage('Declarative: Post Actions') {
