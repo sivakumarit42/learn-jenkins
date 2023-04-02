@@ -17,3 +17,4 @@ node ("workstation") {
  }
  }
 
+// Above is Groovy Exception handling (try, catch, Exception)
