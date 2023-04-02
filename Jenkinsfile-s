@@ -17,7 +17,7 @@ node ("workstation") {
             }
         }
 
-if ( PERSON == "RAGHU" ) {
+if ( PERSON == "SIVA" ) {
     stage('two') {
         input(id: 'deploy_approval', message: 'Approve deployment?', ok: 'Deploy', reject: 'Cancel')
         echo "two"
