@@ -1,6 +1,6 @@
 //node {
 node ("workstation") {
-
+    try {
     stage("one") {
         echo "one"
     }
@@ -8,5 +8,10 @@ node ("workstation") {
     stage('two') {
         echo "two"
       }
+ } catch (e) {
+    stage('Declarative: Post Actions') {
+         echo 'This will run only if successful'
+ }
+ }
  }
 
