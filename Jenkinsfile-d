@@ -3,9 +3,13 @@ pipeline {
 
   // Node Name Agent
 
-  agent{
-  node { label 'workstation' }
-  }
+  // agent {
+  // node { label 'workstation' }
+  // }
+
+    agent {
+    label "terraform"
+    }
 
   stages {
       stage("one") {
