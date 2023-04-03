@@ -23,6 +23,7 @@ if ( PERSON == "SIVA" ) {
         echo "two"
         //sh 'exit 1'
       }
+
       }
  } catch (e) {
     stage('Declarative: Post Actions') {
